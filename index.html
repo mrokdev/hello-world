@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>I Love You - App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+
+function iLoveApp() {
+    
+    document.getElementById("demo").innerHTML = "Przepraszam za wczoraj";
+    document.getElementById("container").style.backgroundImage = "hearts.jpg";
+    myVar = setInterval(sorry, 1500);
+    function sorry(){
+         document.getElementById("demo2").innerHTML = "Kocham Cię i postaram się wszystko załatwić";
+    }
+
+}
+        </script>
+        <div id="container">
+            <form name="loveform">
+            <input type="button" onclick="iLoveApp()" value="Kliknij mnie">
+        </form>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        </div>
+        
+    </body>
+</html>
